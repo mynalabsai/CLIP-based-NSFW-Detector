@@ -1,0 +1,6 @@
+clip-anytorch 
+autokeras==1.0.20 
+tensorflow==2.9
+numpy==1.21
+-i https://download.pytorch.org/whl/cu102
+torch==2.0.1
