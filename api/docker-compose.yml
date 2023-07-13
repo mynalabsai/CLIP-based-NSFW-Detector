@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - 8010:80
+    volumes:
+      - ../:/code
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+#              count: all
+              device_ids: [ '3' ]
+              capabilities: [ gpu ]
